@@ -92,7 +92,7 @@ namespace SQL_Merge_Tool
                     string str = myFileInfo[i].DirectoryName + "\\" + myFileInfo[i].Name;
                     //string str = textBox.Text + "\\" + myFileInfo[i].Name;
                     StreamReader Strsw = new StreamReader(str, comboBox.SelectedIndex == 0 ? Encoding.UTF8 : Encoding.GetEncoding(54936));
-                    NewFileName += Strsw.ReadToEnd() + "\r\n\r\n  /*******************分割线***************/ \r\n\r\n go  \r\n\r\n ";
+                    NewFileName += Strsw.ReadToEnd() + "\r\n\r\n  /*******************"+str+"***************/ \r\n\r\n go  \r\n\r\n ";
                     Strsw.Close();
                 }
 
